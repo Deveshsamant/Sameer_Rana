@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitalization Techniques</title>
+    <style>
+        :root {
+            --charcoal: #2B2B2B;
+            --yellow: #FFD700;
+            --dark-yellow: #CCB000;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: var(--charcoal);
+            color: white;
+        }
+
+        .header {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(rgba(43, 43, 43, 0.9), rgba(43, 43, 43, 0.9));
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: var(--yellow);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .card-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .card {
+            position: relative;
+            height: 400px;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .card-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+        }
+
+        .card-title {
+            color: var(--yellow);
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .card-btn {
+            background-color: var(--yellow);
+            color: var(--charcoal);
+            padding: 10px 25px;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .card-btn:hover {
+            background-color: var(--dark-yellow);
+        }
+
+        footer {
+            background-color: #1A1A1A;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .card-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>New Techniques of Digitalisation in All Fields</h1>
+    </header>
+
+    <div class="card-container">
+        <!-- Finance Card -->
+        <a href="finance.html" class="card">
+            <div class="card-image" style="background-image: url('finance.jpg')">
+                <div class="card-content">
+                    <h2 class="card-title">Finance</h2>
+                    <button class="card-btn">Explore More</button>
+                </div>
+            </div>
+        </a>
+
+        <!-- Education Card -->
+        <a href="education.html" class="card">
+            <div class="card-image" style="background-image: url('education.jpg')">
+                <div class="card-content">
+                    <h2 class="card-title">Education</h2>
+                    <button class="card-btn">Explore More</button>
+                </div>
+            </div>
+        </a>
+
+        <!-- Government Card -->
+        <a href="government.html" class="card">
+            <div class="card-image" style="background-image: url('government.jpg')">
+                <div class="card-content">
+                    <h2 class="card-title">Government</h2>
+                    <button class="card-btn">Explore More</button>
+                </div>
+            </div>
+        </a>
+
+        <!-- Economics Card -->
+        <a href="economics.html" class="card">
+            <div class="card-image" style="background-image: url('economics.jpg')">
+                <div class="card-content">
+                    <h2 class="card-title">Economics</h2>
+                    <button class="card-btn">Explore More</button>
+                </div>
+            </div>
+        </a>
+
+        <!-- Health/Nutrition Card -->
+        <a href="health.html" class="card">
+            <div class="card-image" style="background-image: url('health.jpg')">
+                <div class="card-content">
+                    <h2 class="card-title">Health/Nutrition</h2>
+                    <button class="card-btn">Explore More</button>
+                </div>
+            </div>
+        </a>
+
+        <!-- Commerce Card -->
+        <a href="commerce.html" class="card">
+            <div class="card-image" style="background-image: url('commerce.jpg')">
+                <div class="card-content">
+                    <h2 class="card-title">Commerce</h2>
+                    <button class="card-btn">Explore More</button>
+                </div>
+            </div>
+        </a>
+
+        <!-- Architecture Card -->
+        <a href="architecture.html" class="card">
+            <div class="card-image" style="background-image: url('architecture.jpg')">
+                <div class="card-content">
+                    <h2 class="card-title">Architecture</h2>
+                    <button class="card-btn">Explore More</button>
+                </div>
+            </div>
+        </a>
+
+        <!-- Agriculture Card -->
+        <a href="agriculture.html" class="card">
+            <div class="card-image" style="background-image: url('agriculture.jpg')">
+                <div class="card-content">
+                    <h2 class="card-title">Agriculture</h2>
+                    <button class="card-btn">Explore More</button>
+                </div>
+            </div>
+        </a>
+
+        <!-- Textile Card -->
+        <a href="textile.html" class="card">
+            <div class="card-image" style="background-image: url('textile.jpg')">
+                <div class="card-content">
+                    <h2 class="card-title">Textile</h2>
+                    <button class="card-btn">Explore More</button>
+                </div>
+            </div>
+        </a>
+
+        <!-- Sports Card -->
+        <a href="sports.html" class="card">
+            <div class="card-image" style="background-image: url('sports.jpg')">
+                <div class="card-content">
+                    <h2 class="card-title">Sports</h2>
+                    <button class="card-btn">Explore More</button>
+                </div>
+            </div>
+        </a>
+
+        <!-- Communication Card -->
+        <a href="communication.html" class="card">
+            <div class="card-image" style="background-image: url('communication.jpg')">
+                <div class="card-content">
+                    <h2 class="card-title">Communication</h2>
+                    <button class="card-btn">Explore More</button>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <footer>
+        <p>New techniques of digitalisation in all fields. Sameer Rana.</p>
+    </footer>
+</body>
+</html>
