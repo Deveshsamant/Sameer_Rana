@@ -221,8 +221,8 @@ async def make_sudoku_move(game_id: str, move: Dict[str, Any]):
 # Snakes and Ladders Game
 def create_snakes_and_ladders_board():
     """Create a Snakes and Ladders board with snakes and ladders"""
-    snakes = {16: 6, 47: 26, 49: 11, 56: 53, 62: 19, 64: 60, 87: 24, 93: 73, 95: 75, 98: 78}
-    ladders = {1: 38, 4: 14, 9: 21, 21: 42, 28: 84, 36: 44, 51: 67, 71: 91, 80: 100}
+    snakes = {"16": 6, "47": 26, "49": 11, "56": 53, "62": 19, "64": 60, "87": 24, "93": 73, "95": 75, "98": 78}
+    ladders = {"1": 38, "4": 14, "9": 21, "21": 42, "28": 84, "36": 44, "51": 67, "71": 91, "80": 100}
     return snakes, ladders
 
 @api_router.post("/games/snakeladder/new")
