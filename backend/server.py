@@ -272,12 +272,12 @@ async def roll_dice_snakeladder(game_id: str):
         state["playerPosition"] = new_position
         
         # Check for snakes
-        if new_position in state["snakes"]:
-            state["playerPosition"] = state["snakes"][new_position]
+        if str(new_position) in state["snakes"]:
+            state["playerPosition"] = state["snakes"][str(new_position)]
         
         # Check for ladders
-        elif new_position in state["ladders"]:
-            state["playerPosition"] = state["ladders"][new_position]
+        elif str(new_position) in state["ladders"]:
+            state["playerPosition"] = state["ladders"][str(new_position)]
     
     # Update game in database
     await db.games.update_one(
